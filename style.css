@@ -1,0 +1,374 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+  }
+  body{
+    background-color: white;
+    font-family: "Nunito";
+
+
+    background-repeat:no-repeat;
+
+  }
+  header{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: space-between;
+    padding: 15px;
+    height: 75px;
+    top: 0;
+    position: sticky;
+}
+
+header nav a {
+  text-align: center;
+  cursor: pointer;
+}
+.logo img {
+    height: 65px;
+    width: 60px;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+  nav a{
+    text-decoration: none;
+    color: lightblue;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-right: 10px;
+    text-shadow: 1px 1px 2px rgb(97, 82, 62);
+}
+html {
+  scroll-behavior: smooth;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--box-bg);
+  box-shadow: 0 0 10px black;
+  border-radius: 50%;
+
+  transition: all 500ms;
+}
+.dot-active {
+  background-color: aqua;
+}
+.dots-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 999;
+
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.banner {
+  background-color: var(--box-bg);
+  /* background-image: url('../images/banner1.png'); */
+  height: 600px;
+  padding: 25px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  justify-content: end;
+  align-content: center;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.section-title {
+  padding-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  text-align: center;
+  font-size: xx-large;
+  color: lightblue ;
+}
+#home p {
+  font-size: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.card img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.card {
+  height: 300px;
+  width: 304px;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+.card ul {
+  width: 100%;
+  height: 50px;
+}
+.card a{
+  text-decoration: none;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px antiquewhite;
+  font-weight: 700;
+  font-size: 25px;
+}
+.card p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+.btn-group {
+  display: grid;
+  /* place-items: center; */
+  gap: 10px;
+}
+
+.btn-group .btn {
+  font-size: 14px;
+  /* background-color: bd; */
+  border: 1.5px solid orange;
+  border-radius: 5px;
+  color: var(--txt);
+  
+}
+
+.btn.btn-main {
+  border: 0;
+  color: bd;
+  background-color: lightblue;
+  text-align: center;
+}
+a, button, input, textarea, select {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--txt);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: none;
+}
+.movie-detail h1 {
+  font-size: 20px;
+}
+.movie-detail {
+  color: white;
+}
+.profile-wrapper {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+#team {
+  padding: 20px;
+}
+#volunteer {
+  padding: 20px;
+}
+main {
+  background-color: rgb(3, 174, 231);
+
+}
+
+.profile {
+  padding: 5px;
+  width: 200px;
+  background-color: lightblue;
+  height: 250px;
+  border: 2px solid black;
+  display: inline-block;
+  overflow: hidden;
+  margin: 15px;
+  border-radius: 10px;
+
+  transition: all 500ms;
+}
+.profile h1 {
+  font-size: 15px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+footer{
+  text-align: center;
+  background-color: bisque;
+}
+footer h4{
+  font-size: xx-large;
+}
+.detail-container {
+  height: calc(100vh - 160px);
+  
+  /* background-image: url('../images/ant_man.jpeg'); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 15px;
+}
+
+.detail-header h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.detail-body {
+  height: 100%;
+}
+
+
+.tabbar {
+  margin-top: 15px;
+  display: flex;
+}
+
+.tab-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.active {
+  background-color: #0e3b58;
+}
+
+
+.review img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.review {
+  padding: 5px 10px;
+  background-color: #2C74B3;
+  border-radius: 10px;
+
+  flex: 1 0 40%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-tab {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+}
+
+.video-tab {
+  padding: 15px;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.video-tab iframe {
+  width: 100%;
+  height: 460px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px #2C74B3;
+}
+
+.detail-tab p {
+  font-weight: 500;
+  margin: 25px 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.detail-tab p > ion-icon {
+  flex: 1 0 auto;
+}
+
+.detail-tab .text {
+  flex: 100%;
+}
+
+.detail-tab {
+  padding: 15px;
+  /* height: 400px; */
+
+}
+
+.tab {
+  display: none;
+}
+
+.active-tab {
+  display: grid;
+}
